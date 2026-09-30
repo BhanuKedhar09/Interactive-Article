@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health and Wealth in 46 Countries</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__title">
+      <h1 id="page-title">Health and Wealth in 46 Countries</h1>
+      <p class="legend">
+        <span class="legend__item"><span class="legend__sample">84.5</span> Hover a number or a marked cell to connect it</span>
+        <span class="legend__item"><kbd>Click</kbd> to hold the link</span>
+        <span class="legend__item"><kbd>Esc</kbd> to clear</span>
+      </p>
+    </div>
+    <p class="status" id="status" aria-live="polite"></p>
+  </header>
+
+  <main class="workspace">
+    <section class="pane pane--table" id="table-pane" aria-label="Data table">
+      <table class="data-table" id="data-table">
+        <caption class="visually-hidden">Health and wealth indicators for 46 countries</caption>
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <div class="gutter" aria-hidden="true"></div>
+
+    <section class="pane pane--text" id="text-pane" aria-label="Article">
+      <article class="article" id="article"></article>
+    </section>
+  </main>
+
+  <svg class="link-layer" id="link-layer" aria-hidden="true"></svg>
+
+  <script src="data/dataset.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
